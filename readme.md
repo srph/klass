@@ -7,7 +7,7 @@ This is, nothing more or less, a proof of concept.
 
 ## What, Why, How?
 
-Let's say, we want to create a class named `SessionManager`. It's an abstraction above a native session implementaton.
+We want to create a class named `SessionManager`, an abstraction above a native (or whatevah) session implementaton.
 
 ```js
 /**
@@ -45,4 +45,21 @@ Klass({
 });
 
 var session = new SessionManager(..);
+```
+
+## What about constants and statics?
+
+Well, they're here, too!
+
+```
+Klass('SomeClass', {
+  constants: {
+    API_PUB_KEY: '...',
+    API_SECRET_KEY: '..'
+  },
+
+  statics: {
+    fn: function() { /* .. */ }
+  }
+});
 ```
