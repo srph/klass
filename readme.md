@@ -60,4 +60,29 @@ Klass('SomeClass', {
     fn: function() { /* .. */ }
   }
 });
+
+var some = new SomeClass(..);
+```
+
+# But.. wait, where do you hoist the classes?
+
+They are automatically added to the `this` context (normally, `window`). However, you can set it yourself.
+```js
+Klass('SomeClass', {
+  ..
+}, someObj);
+```
+
+It's a good practice to set the root to `window` in cases when the class is a public API.
+```js
+Klass('SomeClass', {
+  ..
+}, window);
+```
+
+Or if you would prefer not to hoist the class:
+```js
+var SomeKlass = Klass('SomeClass', {
+  ..
+}, {});
 ```
