@@ -26,7 +26,7 @@ SessionManager.prototype.clear = function() { /* .. */ }
 var session = new SessionManager(..);
 ```
 
-But, I think, this is a little more declarative and close to the ES6 syntax:
+But, I think, this is a little more declarative and closer to the ES6 syntax:
 
 ```js
 Klass('SessionManager', {
