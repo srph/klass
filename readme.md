@@ -29,9 +29,7 @@ var session = new SessionManager(..);
 But, I think, this is a little more declarative and close to the ES6 syntax:
 
 ```js
-Klass({
-  _displayName: 'SessionManager',
-
+Klass('SessionManager', {
   bag: [],
 
   constructor: function(options) {
