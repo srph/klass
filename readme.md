@@ -3,7 +3,7 @@
 
 It's painful when you have to write code that's not declarative enough. Well, that's how ES5 is. This library creates an abstraction so you can write classes like in most known OOP languages; no need to deal with prototype pains.
 
-This is, nothing more or less, a proof of concept.
+This is, nothing more or less, a proof of concept; also a *work in progress*.
 
 ## What, Why, How?
 
