@@ -49,7 +49,7 @@ var session = new SessionManager(..);
 
 Well, they're here, too!
 
-```
+```js
 Klass('SomeClass', {
   constants: {
     API_PUB_KEY: '...',
@@ -62,6 +62,10 @@ Klass('SomeClass', {
 });
 
 var some = new SomeClass(..);
+console.log(typeof SomeClass.fn) // => "function"
+console.log(typeof some.fn) // => "undefined"
+some.API_PUB_KEY = 'whatever';
+console.log(some.API_PUB_KEY); // => "..."
 ```
 
 # But.. wait, where do you hoist the classes?
