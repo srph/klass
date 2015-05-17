@@ -1,0 +1,19 @@
+{
+  "name": "klass",
+  "version": "0.1.0",
+  "description": "> Create ES5 JavaScript classes *declaratively*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srph/klass.git"
+  },
+  "author": "srph <seraphipod@gmail.com> (https://srph.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srph/klass/issues"
+  },
+  "homepage": "https://github.com/srph/klass"
+}
