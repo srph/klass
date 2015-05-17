@@ -1,5 +1,8 @@
 # Changelog
 
+### v0.2.2
+- Fixed adding constants causing to throw `Property description must be an object: y`.
+
 ### v0.2.1
 - Added custom root (in which the created class would be hoisted / added to).
 ```js
